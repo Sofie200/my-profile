@@ -1,19 +1,76 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    color: #666;
     line-height: 150%;
-    font-size: 14px;
-    background-color: #ccc;
-    text-align: center;
-    padding: 50px 0px;
+    font-size: 16px;
+    background-color:aliceblue;
+    padding: 30px 0px;
+}
+
+#wrapper{
+    background-color: white;
+    width: 60%;
+    margin:auto;
+    padding: 75px 30px;
+}
+
+header{
+    display: flex;
+}
+
+#headerimg{
+    width:20%;
+}
+
+#headerimg img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+#headertxt{
+    width:80%;
+    padding-right: 30px;
 }
 
 h1{
-    color:midnightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    color:darkolivegreen;
+    margin:15px 0;
 }
 
-#profile-page{
-    width: 600px;
+main{
     margin: auto;
+    display: flex;
+}
+
+section{
+    width: 70%;
+}
+
+article{
+    width:100%;
+}
+
+aside{
+    width:30%;
+}
+
+
+aside ol{
+    width:100%;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+aside li{
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0 15px 15px 0;
+    border: #999 solid 1px;
+    border-radius: 15px;
 }
 
 .cv-section{
@@ -21,13 +78,6 @@ h1{
     padding: 20px 30px;
     margin: 20px 0px;
     text-align: left;
-}
-
-.profile-image{
-    width:200px;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
 }
 
 ul li {
