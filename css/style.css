@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Outfit, Arial, Helvetica, sans-serif;
     color: #171723;
@@ -17,28 +21,17 @@ p{
 
 #hero{
     display: flex;
-    flex-flow: column wrap;
     height: 100vh;
     background-color:#171723;
 }
 
-#hero p{
-    color: #fab261;
-    font-weight: 100;
-}
-
 header{
-    display: flex;
-    flex-grow: 1;
-    flex-flow: column wrap;
-    justify-content: center;
+    width: 95%;
+    text-align: center;
+    padding: 0 10% 50px;
+    margin: auto;
 }
 
-header div{
-    width: 80%;
-    text-align: center;
-    padding: 0 10%;
-}
 #headerimg img{
     border-radius: 50%;
     width:15%;
@@ -47,26 +40,49 @@ header div{
     border: solid 6px #d67867;
 }
 
+#headertxt{
+    color: #fab261;
+    font-weight: 100;
+}
+
 nav{
     background-color: #4f344e;
     width:100%;
-    align-self: flex-start;
     display: flex;
+    align-self: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
+    position:absolute;
+    bottom: 0;
 }
 
 nav div{
     margin: 10px 15px;
 }
 
-#wrapper{
-    width: 60%;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 1000px;
     margin:0 auto;
-    padding: 0 30px;
+    padding: 70px 0 30px;
+    
 }
 
+section{
+    width: 60%;
+}
+
+aside{
+    width:35%;
+}
+
+article{
+    padding-bottom: 50px;
+}
 
 h1{
     font-weight: 200;
@@ -88,21 +104,6 @@ h3{
     padding-bottom: 3px;
 }
 
-main{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section{
-    width: 55%;
-    padding: 70px 5% 30px;
-}
-
-article{
-    width:100%;
-    padding-bottom: 70px;
-}
 
 ul, ol{
     margin:0;
@@ -117,10 +118,6 @@ li{
     padding:5px 0 10px;
 }
 
-aside{
-    width:25%;
-    padding:70px 5%;
-}
 
 aside ol{
     width:100%;
@@ -161,4 +158,29 @@ footer{
     padding: 20px 0;
     border-top: #d67867 solid 3px;
     color: #b696b4;
+}
+
+@media screen and (max-width: 768px)  {
+    #wrapper{
+        width: 90%;
+    }
+    main{
+        display: block;
+    }
+    section, aside{
+        width: 100%;
+    }
+    h1{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 378px)  {
+    h1{
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    #headertxt{
+        font-size: 1rem;
+    }
 }
