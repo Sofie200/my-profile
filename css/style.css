@@ -105,19 +105,22 @@ h3{
 }
 
 
+#skills{
+    
+}
+
 ul, ol{
     margin:0;
     padding: 0;
 }
 
+main li{
+    margin: 15px 15px;
+}
+
 li::marker{
     color:#b696b4;
 }
-
-li{
-    padding:5px 0 10px;
-}
-
 
 aside ol{
     width:100%;
@@ -128,28 +131,64 @@ aside ol{
 }
 
 aside li{
-    background-color: #b696b4;
+    background-color: #171723;
     list-style: none;
-    padding: 8px 15px;
-    margin: 0 15px 15px 0;
+    padding: 6px 12px;
+    margin: 0 12px 12px 0;
     border: #4f344e solid 1px;
     border-radius: 20px;
-    color: #4f344e;
-    font-weight: 500;
+    color: #d67867;
+    font-weight: 300;
+    font-size:0.9rem;
 }
 
 a{
-   color:#965065; 
+   color:#171723; 
    text-decoration: none;
    font-weight: 500;
 }
 a:hover{
+    color: #4f344e;
+    text-decoration: underline;
+}
+
+nav a{
+   color:#965065;
+}
+nav a:hover{
     color: #d67867;
 }
 
+.icon a:hover{
+    text-decoration: none;
+}
 .bolder{
     font-weight: 700;
 }
+
+#contact{
+    background-color: #b696b4;
+    border: #4f344e 2px solid;
+    border-radius: 10px;
+    padding: 15px 20px 25px;
+    margin-bottom: 40px;
+}
+
+#contact-grid{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 10px 25px;
+    align-items: center;
+}
+
+#contact-grid .icon{
+    width: 20px;
+    display: grid;
+    align-items: center;
+    justify-items:center;
+    text-shadow: 0 0 3px #4f344e;
+}
+
 
 footer{
     background-color: #4f344e;
@@ -160,12 +199,9 @@ footer{
     color: #b696b4;
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 1024px)  {
     #wrapper{
         width: 90%;
-    }
-    main{
-        display: block;
     }
     section, aside{
         width: 100%;
