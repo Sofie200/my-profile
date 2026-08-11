@@ -26,7 +26,7 @@ export function addTrait(title, score){
 
 addTrait("Accountable", 12);
 addTrait("Problem-solving", 11);
-addTrait("Adaptable", 7);
+addTrait("Patient", 10);
 addTrait("Collaborative", 10);
-addTrait("Communicative", 9);
+addTrait("Communicative", 11);
 addTrait("Independent", 10);

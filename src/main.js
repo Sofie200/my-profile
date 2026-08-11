@@ -26,7 +26,7 @@ export function addTrait(title, score){
 
 addTrait("Ansvarstagande ", 12);
 addTrait("Problemlösande", 11);
-addTrait("Anpassningsbar", 7);
+addTrait("Tålmodig", 10);
 addTrait("Samarbetsvillig", 10);
-addTrait("Kommunikativ", 9);
+addTrait("Kommunikativ", 11);
 addTrait("Självständig", 10);
