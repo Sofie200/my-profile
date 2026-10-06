@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 body{
     font-family: Outfit, Arial, Helvetica, sans-serif;
     color: #171723;
@@ -48,6 +58,12 @@ header{
     font-weight: 100;
 }
 
+#language{
+    position: absolute;
+    top:10px;
+    right:20px;
+}
+
 nav{
     height: 35px;
     background-color: #4f344e;
@@ -61,16 +77,60 @@ nav{
     padding: 0 20px;
 }
 
-main{
+#bio-page{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap:80px;
     max-width: 1200px;
     grid-template-rows: 1fr;
     padding: 30px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 35px);
     margin: auto;
     align-items: center;
+}
+
+.wrapper-pink {
+    background-color: #755773;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+#project-page {
+    max-width: 1200px;
+    padding: 30px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-page section {
+    max-width: 800px;
+    display: flex;
+    flex-flow: row;
+    gap:60px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.project{
+    flex: 1;
+    text-align: center;
+}
+
+.project img {
+    border-radius: 50%;
+    width: 100%;
+    min-width: 150px;
+    margin: 0 auto;
+    border: solid 6px #fab261;
+}
+
+.project-desc{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 10px 0;
 }
 
 h1{
@@ -88,6 +148,12 @@ h1{
     color:#4f344e;
     text-align: center;
     margin-bottom: 30px;
+}
+
+#project-page h1 {
+    color: #171723;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 h2{
@@ -162,10 +228,10 @@ a:hover{
     text-decoration: underline;
 }
 
-nav a{
+nav a, #language a{
    color:#965065;
 }
-nav a:hover{
+nav a:hover, #language a:hover{
     color: #d67867;
 }
 
@@ -248,7 +314,7 @@ footer a{
 }
 
 @media screen and (max-width: 1240px)  {
-    main{
+    #bio-page{
         max-width: 800px;
         display: block;
         height: auto;
@@ -268,7 +334,7 @@ footer a{
 }
 
 @media screen and (max-width: 800px)  {
-    main{
+    #bio-page, #project-page, .wrapper-pink{
         max-width: 500px;
         display: block;
         height: auto;
@@ -276,6 +342,13 @@ footer a{
 
     #sections{
         display: block;
+    }
+
+    #project-page section {
+        flex-direction: column;
+        max-width: 250px;
+        margin: auto;
+        gap: 40px;
     }
 
     #skills{

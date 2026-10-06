@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Sofie Johnsson</title>
 </head>
+
 <body>
 
     <div id="hero">
 
         <header>
+            <div id="language"><a href="english.html">English</a></div>
             <div id="headerimg">
                 <img class="profile-image" src="img/305139433_10159655626795546_2659846789829574413_n.jpg">
             </div>
             <div id="headertxt">
                 <h1>Sofie Johnsson</h1>
-                <p>Fullstack‑utvecklare under utbildning på Medieinstitutet<p>
+                <p>Fullstack-utvecklare under utbildning på Medieinstitutet
+                <p>
             </div>
         </header>
 
@@ -24,42 +28,56 @@
 
     <nav>
         <div id="anchors">
-            <a href="english.html">English</a>
+            <a href="#bio-page">Bio</a> | 
+            <a href="#project-page">Projekt</a>
         </div>
         <div id="externallinks">
-            <a href="https://www.linkedin.com/in/sofiejohnsson/" target="_blank">Linkedin</a> | 
+            <a href="https://www.linkedin.com/in/sofiejohnsson/" target="_blank">Linkedin</a> |
             <a href="https://github.com/Sofie200" target="_blank">Min Github</a>
         </div>
     </nav>
 
-    <main>
+    <main id="bio-page">
 
         <section>
 
             <article id="Bio">
                 <h1>Sofie Johnsson</h1>
                 <p>Jag heter Sofie Johnsson, är 39 år gammal och bor i Malmö med min sambo, två barn och en katt.</p>
-                <p>Jag började studera fullstack-utveckling på Medieinstitutet i December 2025 och är supertaggad på att lära mig nya saker!</p>
+                <p>Jag började studera fullstack-utveckling på Medieinstitutet i December 2025 och är supertaggad på att
+                    lära mig nya saker!</p>
             </article>
 
         </section>
         <section id="sections">
-            
+
             <article id="Experience">
                 <h2>Arbetslivserfarenhet</h2>
                 <ul>
-                    <li><h3>2019-2025</h3><span class="bolder">Service Reliability Technician</span>, Efficy</li>
-                    <li><h3>2017-2019</h3><span class="bolder">Incident Manager</span>, Apsis International AB</li>
-                    <li><h3>2008-2017</h3><span class="bolder">Email Designer</span>, Apsis International AB</li>
+                    <li>
+                        <h3>2019-2025</h3><span class="bolder">Service Reliability Technician</span>, Efficy
+                    </li>
+                    <li>
+                        <h3>2017-2019</h3><span class="bolder">Incident Manager</span>, Apsis International AB
+                    </li>
+                    <li>
+                        <h3>2008-2017</h3><span class="bolder">Email Designer</span>, Apsis International AB
+                    </li>
                 </ul>
             </article>
 
             <article id="Education">
                 <h2>Utbildning</h2>
                 <ul>
-                    <li><h3>2025-Nu</h3><span class="bolder">Fullstack-utveckling - YH</span>, Medieinstitutet</li>
-                    <li><h3>2005-2008</h3><span class="bolder">Interaktionsdesign - Kandidat</span>, Malmö Universitet</li>
-                    <li><h3>2002-2005</h3><span class="bolder">Grafisk Kommunikation</span>, Mediegymnasiet Malmö</li>
+                    <li>
+                        <h3>2025-Nu</h3><span class="bolder">Fullstack-utveckling - YH</span>, Medieinstitutet
+                    </li>
+                    <li>
+                        <h3>2005-2008</h3><span class="bolder">Interaktionsdesign - Kandidat</span>, Malmö Universitet
+                    </li>
+                    <li>
+                        <h3>2002-2005</h3><span class="bolder">Grafisk Kommunikation</span>, Mediegymnasiet Malmö
+                    </li>
                 </ul>
             </article>
 
@@ -68,14 +86,15 @@
                 <ol>
                     <li>HTML5</li>
                     <li>CSS3</li>
-                    <li>Användbarhet</li>
-                    <li>JavaScript</li>
+                    <li>TypeScript</li>
                     <li>React</li>
                     <li>Python</li>
-                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
                     <li>AWS</li>
-                    <li>Webbdesign</li>
                     <li>Incident Management</li>
+                    <li>Användbarhet</li>
                 </ol>
             </article>
 
@@ -88,9 +107,36 @@
 
             </article>
 
-        </section>            
-            
+        </section>
+
     </main>
+
+    <div class="wrapper-pink">
+        <main id="project-page">
+
+            <h1>Projekt</h1>
+
+            <section>
+
+                <div class="project">
+                    <a target="_blank" href="https://petalhaus-v2.vercel.app/"><img class="profile-image" src="img/petalhaus.png"></a>
+                    <div class="project-desc">Skolprojekt, Fiktiv e-handel.</div>
+                </div>
+
+                <div class="project">
+                    <a target="_blank" href="https://maison-lilja.vercel.app/"><img class="profile-image" src="img/maisonlilja.png"></a>
+                    <div class="project-desc">Verkligt projekt, Chokladateljé</div>
+                </div>
+                
+                <div class="project">
+                    <a target="_blank" href="https://lifesyncplanner.vercel.app/"><img class="profile-image" src="img/lifesyncplanner.png"></a>
+                    <div class="project-desc">Skolprojekt, Planeringsapp.</div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
 
     <footer>
         <a href="mailto:a.e.sofie@hotmail.com">a.e.sofie@hotmail.com</a>&nbsp;
@@ -98,4 +144,5 @@
     </footer>
     <script src="src/main.js" type="module"></script>
 </body>
+
 </html>
